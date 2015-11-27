@@ -376,11 +376,21 @@
     <section id="contactdetails">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <form data-toggle="validator" role="form" action="MAILTO:zchaudhry11@gmail.com?subject=Message" method="post">
+                    <form data-toggle="validator" role="form" method="post" action="contact.php">
+                    <div class="form-group">
+                        <label for="inputName" class="control-label">Name</label>
+                        <input type="text" class="form-control" name="name" id="inputName" placeholder="John Smith" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="inputEmail" class="control-label">Email</label>
+                        <input type="email" class="form-control" id="inputEmail" placeholder="Email" data-error="This e-mail address is invalid." required>
+                        <div class="help-block with-errors"></div>
+                    </div>
                     
                     <div class="form-group">
                         <label for="inputMessage" class="control-label">Message</label>
-                        <textarea rows="5" class="form-control" placeholder="Message" id="message" data-error="Please enter a message." name=""></textarea>
+                        <textarea rows="5" class="form-control" placeholder="Message" id="message" data-error="Please enter a message."></textarea>
                     </div>
                     
                     <div class="form-group">
