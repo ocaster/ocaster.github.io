@@ -58,7 +58,10 @@
                         <a class="page-scroll" href="#portfolioInner">Projects</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contactdetails">Contact</a>
+                        <a class="page-scroll" href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -85,7 +88,15 @@
     </header>
 
     <!-- About Section -->
+    <section id="aboutIntro">
     <section id="about" class="container content-section text-center">
+        
+        <div id="aboutUp" class="text-center">
+            <a href="#page-top" class="btn btn-circle page-scroll">
+                <i class="fa fa-angle-double-up animated"></i>
+            </a>
+        </div>
+        
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Who Am I?</h2>
@@ -101,11 +112,19 @@
         </a>
     </section>
     </br>
+    </section>
 
     <!-- Project Section -->
     <section id="portfolio" class="content-section text-center">
-                    <section id="portfolioInner">
-                    </section>
+        
+        <div id="portfolioUp" class="text-center">
+            <a href="#about" class="btn btn-circle page-scroll">
+                <i class="fa fa-angle-double-up animated"></i>
+            </a>
+        </div>
+        
+        <section id="portfolioInner"></section>
+        
         <div class="portfolio-section">
             <div class="container">
                 <div class="col-lg-8 col-lg-offset-2">
@@ -132,7 +151,7 @@
                                                     <i class="fa fa-search-plus fa-3x"></i>
                                                 </div>
                                             </div>
-                                            <img src="img/portfolio/portfolio_1.png" class="img-responsive" alt="...">
+                                            <img src="img/portfolio/portfolio_1.png" class="img-responsive" alt="..." draggable="false">
                                         </a>
                                     </div>
                                     
@@ -360,7 +379,7 @@
                     </a>
                     </div> <!-- Carousel End -->
                 </br></br></br>
-                <a href="#contactdetails" class="btn btn-circle page-scroll">
+                <a href="#services" class="btn btn-circle page-scroll">
                     <i class="fa fa-angle-double-down animated"></i>
                 </a>
                 </br></br></br></br></br></br></br></br></br></br></br>  <!-- Blank Space for Arrow Icon -->
@@ -370,8 +389,57 @@
 
     </section>
     
+    <!-- Services Section -->
+<header class="serviceIntro">
+    
+    <section id="services" class="container content-section">
+        
+        <div id="serviceUp" class="text-center">
+            <a href="#portfolioInner" class="btn btn-circle page-scroll">
+                <i class="fa fa-angle-double-up animated"></i>
+            </a>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <h2>Services I Offer</h2>
+                <hr>
+            </div>
+            <div id="listitems" class="col-lg-8 col-lg-offset-2">
+                <ul>
+                    <li>Service 1</li>
+                    </br>
+                    <li>Service 2</li>
+                    </br>
+                    <li>Service 3</li>
+                    </br>
+                    <li>Service 4</li>
+                    </br>
+                    <li>Service 5</li>
+                    </br>
+                    <li>Service 6</li>
+                <ul>
+            </div>
+        </div>
+        
+        <div class="text-center">
+            <a href="#contact" class="btn btn-circle page-scroll">
+                <i class="fa fa-angle-double-down animated"></i>
+            </a>
+        </div>
+
+    </section>
+</header>
+    
     <!-- Contact Section -->
     <section id="contact">
+        
+        <div id="contactUp" class="text-center">
+            <a href="#services" class="btn btn-circle page-scroll">
+                <i class="fa fa-angle-double-up animated"></i>
+            </a>
+        </div>
+        
         <div class="container content-section text-center">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -383,15 +451,31 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
                     <form data-toggle="validator" role="form" action="MAILTO:zchaudhry11@gmail.com?subject=Message" method="post">
+
+                    <div id="form-main">
+                    <div id="form-div">
+                        <form class="form" id="form1">
                         
-                        <p>Address: </br>
-                           Phone Number:</br>
-                           E-mail:</br>
+                        <p class="name">
+                            <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
                         </p>
-                    
-                    <div class="form-group">
-                        <button type="submit" class="btn btn-primary">Send E-mail</button>
+                        
+                        <p class="email">
+                            <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
+                        </p>
+                        
+                        <p class="text">
+                            <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment"></textarea>
+                        </p>
+                        
+                        
+                        <div class="submit">
+                            <input type="submit" value="SEND" id="button-blue"/>
+                            <div class="ease"></div>
+                        </div>
+                        </form>
                     </div>
+
                     <!-- Social Media Links -->
                     <ul class="list-inline banner-social-buttons">
                         <li>
@@ -416,7 +500,7 @@
     
     <!-- Footer -->
     <footer>
-        <div class="container text-center">
+        <div id="copyright" class="container text-center">
             <p>Copyright &copy; CamDigitalDesigns 2015</p>
         </div>
     </footer>
@@ -431,7 +515,7 @@
                         <div class="modal-body">
                             <h2>Project Title</h2>
                             <hr>
-                            <img src="img/portfolio/portfolio_1.png" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/portfolio_1.png" class="img-responsive img-centered" alt="" draggable="false" oncontextmenu="return false">
                             <ul class="list-inline item-details">
                                 <li>Client:
                                     <strong>Jan Morderca Boosting Service</a>
@@ -459,7 +543,7 @@
                         <div class="modal-body">
                             <h2>Project Title</h2>
                             <hr>
-                            <img src="img/portfolio/portfolio_2.png" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/portfolio_2.png" class="img-responsive img-centered" alt="" draggable="false" oncontextmenu="return false">
                             <ul class="list-inline item-details">
                                 <li>Client:
                                     <strong>Jan Morderca Boosting Service</a>
@@ -487,7 +571,7 @@
                         <div class="modal-body">
                             <h2>Project Title</h2>
                             <hr>
-                            <img src="img/portfolio/portfolio_3.png" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/portfolio_3.png" class="img-responsive img-centered" alt="" draggable="false" oncontextmenu="return false">
                             <ul class="list-inline item-details">
                                 <li>Client:
                                     <strong>Jan Morderca Boosting Service</a>
@@ -515,7 +599,7 @@
                         <div class="modal-body">
                             <h2>Project Title</h2>
                             <hr>
-                            <img src="img/portfolio/portfolio_4.png" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/portfolio_4.png" class="img-responsive img-centered" alt="" draggable="false" oncontextmenu="return false">
                             <ul class="list-inline item-details">
                                 <li>Client:
                                     <strong>Jan Morderca Boosting Service</a>
@@ -543,7 +627,7 @@
                         <div class="modal-body">
                             <h2>Project Title</h2>
                             <hr>
-                            <img src="img/portfolio/portfolio_5.png" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/portfolio_5.png" class="img-responsive img-centered" alt="" draggable="false" oncontextmenu="return false">
                             <ul class="list-inline item-details">
                                 <li>Client:
                                     <strong>Jan Morderca Boosting Service</a>
@@ -571,7 +655,7 @@
                         <div class="modal-body">
                             <h2>Project Title</h2>
                             <hr>
-                            <img src="img/portfolio/portfolio_6.png" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/portfolio_6.png" class="img-responsive img-centered" alt="" draggable="false" oncontextmenu="return false">
                             <ul class="list-inline item-details">
                                 <li>Client:
                                     <strong>Jan Morderca Boosting Service</a>
@@ -599,7 +683,7 @@
                         <div class="modal-body">
                             <h2>Project Title</h2>
                             <hr>
-                            <img src="img/portfolio/portfolio_7.png" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/portfolio_7.png" class="img-responsive img-centered" alt="" draggable="false" oncontextmenu="return false">
                             <ul class="list-inline item-details">
                                 <li>Client:
                                     <strong>Jan Morderca Boosting Service</a>
@@ -627,7 +711,7 @@
                         <div class="modal-body">
                             <h2>Project Title</h2>
                             <hr>
-                            <img src="img/portfolio/portfolio_8.png" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/portfolio_8.png" class="img-responsive img-centered" alt="" draggable="false" oncontextmenu="return false">
                             <ul class="list-inline item-details">
                                 <li>Client:
                                     <strong>Jan Morderca Boosting Service</a>
@@ -655,7 +739,7 @@
                         <div class="modal-body">
                             <h2>Project Title</h2>
                             <hr>
-                            <img src="img/portfolio/portfolio_9.png" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/portfolio_9.png" class="img-responsive img-centered" alt="" draggable="false" oncontextmenu="return false">
                             <ul class="list-inline item-details">
                                 <li>Client:
                                     <strong>Jan Morderca Boosting Service</a>
@@ -683,7 +767,7 @@
                         <div class="modal-body">
                             <h2>Project Title</h2>
                             <hr>
-                            <img src="img/portfolio/portfolio_10.png" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/portfolio_10.png" class="img-responsive img-centered" alt="" draggable="false" oncontextmenu="return false">
                             <ul class="list-inline item-details">
                                 <li>Client:
                                     <strong>Jan Morderca Boosting Service</a>
@@ -711,7 +795,7 @@
                         <div class="modal-body">
                             <h2>Project Title</h2>
                             <hr>
-                            <img src="img/portfolio/portfolio_11.png" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/portfolio_11.png" class="img-responsive img-centered" alt="" draggable="false" oncontextmenu="return false">
                             <ul class="list-inline item-details">
                                 <li>Client:
                                     <strong>Jan Morderca Boosting Service</a>
@@ -739,7 +823,7 @@
                         <div class="modal-body">
                             <h2>Project Title</h2>
                             <hr>
-                            <img src="img/portfolio/portfolio_12.png" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/portfolio_12.png" class="img-responsive img-centered" alt="" draggable="false" oncontextmenu="return false">
                             <ul class="list-inline item-details">
                                 <li>Client:
                                     <strong>Jan Morderca Boosting Service</a>
@@ -767,7 +851,7 @@
                         <div class="modal-body">
                             <h2>Project Title</h2>
                             <hr>
-                            <img src="img/portfolio/portfolio_13.png" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/portfolio_13.png" class="img-responsive img-centered" alt="" draggable="false" oncontextmenu="return false">
                             <ul class="list-inline item-details">
                                 <li>Client:
                                     <strong>Jan Morderca Boosting Service</a>
@@ -795,7 +879,7 @@
                         <div class="modal-body">
                             <h2>Project Title</h2>
                             <hr>
-                            <img src="img/portfolio/portfolio_14.png" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/portfolio_14.png" class="img-responsive img-centered" alt="" draggable="false" oncontextmenu="return false">
                             <ul class="list-inline item-details">
                                 <li>Client:
                                     <strong>Jan Morderca Boosting Service</a>
@@ -823,7 +907,7 @@
                         <div class="modal-body">
                             <h2>Project Title</h2>
                             <hr>
-                            <img src="img/portfolio/portfolio_15.png" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/portfolio_15.png" class="img-responsive img-centered" alt="" draggable="false" oncontextmenu="return false">
                             <ul class="list-inline item-details">
                                 <li>Client:
                                     <strong>Jan Morderca Boosting Service</a>
@@ -851,7 +935,7 @@
                         <div class="modal-body">
                             <h2>Project Title</h2>
                             <hr>
-                            <img src="img/portfolio/portfolio_16.png" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/portfolio_16.png" class="img-responsive img-centered" alt="" draggable="false" oncontextmenu="return false">
                             <ul class="list-inline item-details">
                                 <li>Client:
                                     <strong>Jan Morderca Boosting Service</a>
@@ -879,7 +963,7 @@
                         <div class="modal-body">
                             <h2>Project Title</h2>
                             <hr>
-                            <img src="img/portfolio/portfolio_17.png" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/portfolio_17.png" class="img-responsive img-centered" alt="" draggable="false" oncontextmenu="return false">
                             <ul class="list-inline item-details">
                                 <li>Client:
                                     <strong>Jan Morderca Boosting Service</a>
@@ -907,7 +991,7 @@
                         <div class="modal-body">
                             <h2>Project Title</h2>
                             <hr>
-                            <img src="img/portfolio/portfolio_18.png" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/portfolio_18.png" class="img-responsive img-centered" alt="" draggable="false" oncontextmenu="return false">
                             <ul class="list-inline item-details">
                                 <li>Client:
                                     <strong>Jan Morderca Boosting Service</a>
