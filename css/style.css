@@ -143,11 +143,16 @@ a:focus {
     text-align: center;
     color: #fff;
     background: no-repeat bottom center scroll; /*add url if picture used*/
-    background-color: #c3c322;
+    background-color: #a3c322;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+}
+
+#logo
+{
+    width: 100%;
 }
 
 .intro .intro-body {
@@ -299,17 +304,15 @@ a:focus {
 }
 
 .btn-default {
-    border: 1px solid #42dca3;
-    color: #42dca3;
+    border: 1px solid #fff;
+    color: #fff;
     background-color: transparent;
 }
 
 .btn-default:hover,
 .btn-default:focus {
-    border: 1px solid #42dca3;
     outline: 0;
     color: #000;
-    background-color: #42dca3;
 }
 
 ul.banner-social-buttons {
