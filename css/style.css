@@ -545,9 +545,10 @@ body {
 }
 
 #about {
-    padding-bottom: 150px;
-    position: relative;
-    bottom: 40px;
+    padding-top: 170px;
+    padding-bottom: 100px;
+    
+    
 }
 
 #aboutUp {
@@ -557,6 +558,8 @@ body {
 
 #portfolio {
     background-color: #dc4242;
+    padding-top: 50px;
+    padding-bottom: 100px;
 }
 
 #portfolioInner {
