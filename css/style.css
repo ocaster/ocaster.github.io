@@ -1,15 +1,15 @@
 body {
     width: 100%;
     height: 100%;
-    font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'bebas_neuelight';
     color: #fff;
-    background-color: #dc8f42;
+    background-color: #b1b1b1;
 }
 
 html {
     width: 100%;
     height: 100%;
-    background-color: #3498db;
+    background-color: #b1b1b1;
 }
 
 h1,
@@ -147,6 +147,8 @@ a:focus {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    border: 1px solid #000;
+    border-bottom-width: 0;
 }
 
 #logo
@@ -335,6 +337,8 @@ ul.banner-social-buttons {
 
 footer {
     padding: 50px 0;
+    border: 1px solid #000;
+    border-top-width: 0;
 }
 
 footer p {
@@ -382,7 +386,7 @@ body {
     width: 100%;
     height: 100%;
     opacity: 0;
-    background: rgba(24,188,156,.9);
+    background: rgba(48,174,214,.9);
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
     transition: all ease .5s;
@@ -512,8 +516,9 @@ body {
 }
 
 .serviceIntro {
-    background-color: #3c3c3c;
+    background-color: #c2c2c2;
     padding-bottom: 250px;
+    border: 1px solid #000;
 }
 
 .serviceIntro .row {
@@ -521,7 +526,14 @@ body {
 }
 
 #serviceUp {
-    padding-bottom: 100px;
+    position: relative;
+    top: -150px;
+    padding-bottom: 120px;
+}
+
+#servicesDownButton {
+    position: relative;
+    top: 175px;
 }
 
 #listitems {
@@ -538,7 +550,7 @@ body {
 
 #aboutIntro {
     background-color: #e6e4e5;
-    border: 3px solid #000;
+    border: 1px solid #000;
 }
 
 .boxed {
@@ -558,6 +570,36 @@ body {
 .boxed h1 {
     position: relative;
     display: inline;
+}
+
+.boxedServices {
+    color: #fff;
+    background-color: #000;
+    margin-top: -150px;
+    position:absolute;
+    left: 0;
+    right: 0;
+    text-align:center;
+}
+
+.boxedServices h1 {
+    position: relative;
+    display: inline;
+}  
+
+.boxedContact {
+    color: #fff;
+    background-color: #000;
+    margin-top: 70px;
+    position:absolute;
+    left: 0;
+    right: 0;
+    text-align:center;
+}
+
+.boxedContact h1 {
+    position: relative;
+    display: inline;
 } 
 
 #about {
@@ -572,9 +614,12 @@ body {
 }
 
 #portfolio {
-    background-color: #3c3c3c;
+    background-color: #d5d5d5;
     padding-top: 50px;
     padding-bottom: 100px;
+    border: 1px solid #000;
+    border-top-width: 0;
+    border-bottom-width: 0;
 }
 
 #portfolioInner {
@@ -587,7 +632,10 @@ body {
 }
 
 #contact {
-    background-color: #3498db;
+    background-color: #b1b1b1;
+    border: 1px solid #000;
+    border-bottom-width: 0;
+    border-top-width: 0;
 }
 
 #contact .content-section {
