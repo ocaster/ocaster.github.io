@@ -119,10 +119,9 @@ a:focus {
 
 @media(min-width:768px) {
     .navbar-custom {
-        padding: 20px 0;
+        padding: 10px 0;
         border-bottom: 0;
         letter-spacing: 1px;
-        background: 0 0;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
@@ -141,9 +140,9 @@ a:focus {
     height: auto;
     padding: 100px 0;
     text-align: center;
-    color: #fff;
+    color: #000;
     background: no-repeat bottom center scroll; /*add url if picture used*/
-    background-color: #a3c322;
+    background-color: #fff;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -188,10 +187,9 @@ a:focus {
     height: 70px;
     margin-top: 15px;
     padding: 7px 16px;
-    border: 2px solid #fff;
     border-radius: 100%!important;
     font-size: 40px;
-    color: #fff;
+    color: #3c3c3c;
     background: 0 0;
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
@@ -201,8 +199,6 @@ a:focus {
 .btn-circle:hover,
 .btn-circle:focus {
     outline: 0;
-    color: #fff;
-    background: rgba(255,255,255,.1);
 }
 
 .btn-circle i.animated {
@@ -516,7 +512,7 @@ body {
 }
 
 .serviceIntro {
-    background-color: #422c8f;
+    background-color: #3c3c3c;
     padding-bottom: 250px;
 }
 
@@ -541,14 +537,33 @@ body {
 }
 
 #aboutIntro {
-    background-color: #04936d;
+    background-color: #e6e4e5;
+    border: 3px solid #000;
 }
+
+.boxed {
+    color: #fff;
+    background-color: #000;
+    margin-top: -60px;
+    position:absolute;
+    left: 0;
+    right: 0;
+}
+
+.boxed h2 {
+    position: relative;
+    display: inline;
+} 
+
+.boxed h1 {
+    position: relative;
+    display: inline;
+} 
 
 #about {
     padding-top: 170px;
     padding-bottom: 100px;
-    
-    
+    color: #000;
 }
 
 #aboutUp {
@@ -557,7 +572,7 @@ body {
 }
 
 #portfolio {
-    background-color: #dc4242;
+    background-color: #3c3c3c;
     padding-top: 50px;
     padding-bottom: 100px;
 }
@@ -620,12 +635,12 @@ body {
 	opacity:0.9;
 	color:#0493bd;
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-  font-weight:400;
+    font-weight:400;
 	font-size: 18px;
 	border-radius: 0;
 	line-height: 22px;
 	background-color: #fbfbfb;
-  border: 3px solid #fbfbfb;
+    border: 3px solid #fbfbfb;
 	padding: 13px 13px 13px 54px;
 	margin-bottom: 10px;
 	width:100%;
