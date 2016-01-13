@@ -1,7 +1,30 @@
+@font-face {
+    font-family: 'bebas_neuelight';
+    src: url('fonts/bebasneue-light-webfont.eot');
+    src: url('fonts/bebasneue-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/bebasneue-light-webfont.woff2') format('woff2'),
+         url('fonts/bebasneue-light-webfont.woff') format('woff'),
+         url('fonts/bebasneue-light-webfont.ttf') format('truetype'),
+         url('fonts/bebasneue-light-webfont.svg#bebas_neuelight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'bebas_neuebold';
+    src: url('fonts/bebasneue-bold-webfont.eot');
+    src: url('fonts/bebasneue-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/bebasneue-bold-webfont.woff2') format('woff2'),
+         url('fonts/bebasneue-bold-webfont.woff') format('woff'),
+         url('fonts/bebasneue-bold-webfont.ttf') format('truetype'),
+         url('fonts/bebasneue-bold-webfont.svg#bebas_neuebold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     width: 100%;
     height: 100%;
-    font-family: 'bebas_neuelight';
     color: #fff;
     background-color: #b1b1b1;
 }
@@ -141,14 +164,16 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #000;
-    background: no-repeat bottom center scroll; /*add url if picture used*/
+    background: url(../img/background-main.jpg) no-repeat bottom center scroll; /*add url if picture used*/
     background-color: #fff;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    border: 1px solid #000;
     border-bottom-width: 0;
+    font-family: 'bebas_neuelight', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 900;
+    letter-spacing: 1.25px;
 }
 
 #logo
@@ -337,7 +362,6 @@ ul.banner-social-buttons {
 
 footer {
     padding: 50px 0;
-    border: 1px solid #000;
     border-top-width: 0;
 }
 
@@ -518,7 +542,6 @@ body {
 .serviceIntro {
     background-color: #c2c2c2;
     padding-bottom: 250px;
-    border: 1px solid #000;
 }
 
 .serviceIntro .row {
@@ -550,7 +573,6 @@ body {
 
 #aboutIntro {
     background-color: #e6e4e5;
-    border: 1px solid #000;
 }
 
 .boxed {
@@ -617,7 +639,6 @@ body {
     background-color: #d5d5d5;
     padding-top: 50px;
     padding-bottom: 100px;
-    border: 1px solid #000;
     border-top-width: 0;
     border-bottom-width: 0;
 }
@@ -633,7 +654,6 @@ body {
 
 #contact {
     background-color: #b1b1b1;
-    border: 1px solid #000;
     border-bottom-width: 0;
     border-top-width: 0;
 }
@@ -681,14 +701,12 @@ body {
 
 .feedback-input {
 	opacity:0.9;
-	color:#0493bd;
+	color:#8a8a8a;
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
     font-weight:400;
 	font-size: 18px;
 	border-radius: 0;
 	line-height: 22px;
-	background-color: #fbfbfb;
-    border: 3px solid #fbfbfb;
 	padding: 13px 13px 13px 54px;
 	margin-bottom: 10px;
 	width:100%;
@@ -696,20 +714,28 @@ body {
 	-moz-box-sizing: border-box;
 	-ms-box-sizing: border-box;
 	box-sizing: border-box;
+    background: #eef5f7;
+    border: 1px solid #737172;
+    border-bottom-color: #737172;
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
 }
 
 .feedback-input:focus{
-	background: #fff32f;
+	background: #fff;
 	box-shadow: 0;
-	border: 3px solid #1468db;
-	color: #3498db;
+    border-color: #000;
+	color: #000;
 	outline: none;
   padding: 13px 13px 13px 54px;
 }
 
 .focused{
-	color:#30aed6;
-	border:#30aed6 solid 3px;
+	color:#8a8a8a;
+	border:#8a8a8a solid 3px;
 }
 
 /* Icons ---------------------------------- */
