@@ -932,7 +932,7 @@ textarea {
 }
 
 #button-blue{
-	width: 40%;
+	width: 100%;
 	font-size: 16px;
 	padding-top: 22px;
 	padding-bottom: 22px;
@@ -940,13 +940,13 @@ textarea {
 }
 
 .submit:hover .ease{
-  width: 40%;
+  width: 100%;
 }
 
 #contactSubmit {
     padding-top: -25px;
     margin-top: -25px;
-    padding-left: 125px;
+    
 }
 
 /* Icons ---------------------------------- */
@@ -974,4 +974,5 @@ textarea {
 	background-size: 15px 15px;
 	background-position: 15px 15px;
 }
+
 }
