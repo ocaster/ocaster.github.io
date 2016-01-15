@@ -558,13 +558,14 @@ body {
     position: relative;
     top: 175px;
 }
-
+@media only screen and (min-width: 1000px) {
 #listitems {
     columns: 2;
     -webkit-columns: 2;
     -moz-columns: 2;
     padding-left: 150px;
     padding-bottom: 100px;
+}
 }
 
 #services {
@@ -730,7 +731,7 @@ body {
     border-color: #000;
 	color: #000;
 	outline: none;
-  padding: 13px 13px 13px 54px;
+    padding: 13px 13px 13px 54px;
 }
 
 .focused{
@@ -829,12 +830,148 @@ input:focus, textarea:focus {
 }
 
 @media only screen and (max-width: 580px) {
-	#form-div{
+#form-div{
 		left: 3%;
 		margin-right: 3%;
 		width: 88%;
 		margin-left: 0;
 		padding-left: 3%;
 		padding-right: 3%;
-	}
+}    
+}
+
+@media only screen and (max-width: 768px) {
+
+#serviceUp {
+    position: relative;
+    left: 50px;
+    top: -50px;
+    padding-bottom: 120px;
+    margin-top: -15%;
+}
+
+#services {
+    margin-left: -100px;
+}
+
+#listitems {
+    margin-top: -75px;
+    margin-left: 135px;
+    font-size: 1em;
+    line-height: 15px;
+}
+
+#servicesDownButton {
+    position: relative;
+    left: 50px;
+    top: 0;
+    margin-top: -5%;
+}
+
+.boxedServices {
+    color: #fff;
+    background-color: #000;
+    margin-top: -175px;
+    position:absolute;
+    left: 0;
+    right: 0;
+    text-align:center;
+} 
+
+#contactUp {
+    position: relative;
+    top: 25px;
+}
+
+.boxedContact {
+    margin-top: 25px;
+    position:absolute;
+    left: 0;
+    right: 0;
+    text-align:center;
+}
+
+textarea {
+	width: 100%;
+	height: 100px;
+	line-height: 150%;
+}
+
+#contact .content-section {
+    position: relative;
+    bottom: 150px;
+}
+
+#form-main{
+	width:100%;
+	float:left;
+	padding-top:30px;
+}
+
+#form-div{
+    margin-left: 25px;
+    padding-top: 100px;
+}    
+
+/* Textbox size */
+.feedback-input {
+    font-weight:300;
+	font-size: 12px;
+	line-height: 16px;
+	padding: 13px 13px 13px 54px;
+	margin-bottom: 10px;
+	width:100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.feedback-input:focus{
+    padding: 13px 13px 13px 54px;
+}
+
+#button-blue{
+	width: 40%;
+	font-size: 16px;
+	padding-top: 22px;
+	padding-bottom: 22px;
+    border-width: 2px;
+}
+
+.submit:hover .ease{
+  width: 40%;
+}
+
+#contactSubmit {
+    padding-top: -25px;
+    margin-top: -25px;
+    padding-left: 125px;
+}
+
+/* Icons ---------------------------------- */
+#name{
+	background-size: 15px 15px;
+	background-position: 15px 15px;
+}
+
+#name:focus{
+	background-size: 15px 15px;
+	background-position: 15px 15px;
+}
+
+#email{
+	background-size: 15px 15px;
+	background-position: 15px 15px;
+}
+
+#email:focus{
+	background-size: 15px 15px;
+	background-position: 15px 15px;
+}
+
+#comment{
+	background-size: 15px 15px;
+	background-position: 15px 15px;
+}
 }
